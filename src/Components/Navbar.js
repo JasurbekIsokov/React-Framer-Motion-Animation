@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, AnimatePresence, useCycle } from "framer-motion";
 
 const AnimLink = [
   // Linklar uchun array ichida object
@@ -35,6 +36,7 @@ const animProperties = {
 };
 
 const Navbar = () => {
+  const [open, cycleOpen] = useCycle(false, true);
   return <div>Navbar</div>;
 };
 
