@@ -75,7 +75,7 @@ const Navbar = () => {
           </motion.aside>
         )}
         <button className="toggleButton" onClick={cycleOpen}>
-          {open ? "Yopish" : "Ochish"}
+          {open ? "Close" : "Open"}
         </button>
       </AnimatePresence>
     </main>
