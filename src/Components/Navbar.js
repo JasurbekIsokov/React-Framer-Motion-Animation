@@ -59,7 +59,18 @@ const Navbar = () => {
               variants={animProperties}
               animate="open"
               exit="closed"
-            ></motion.div>
+            >
+              {AnimLink.map(({ link, to, id }) => (
+                <motion.a
+                  key={id}
+                  href={to}
+                  whileHover={{ scale: 1.1 }}
+                  variants={navbarSituation}
+                >
+                  {link}
+                </motion.a>
+              ))}
+            </motion.div>
           </motion.aside>
         )}
       </AnimatePresence>
