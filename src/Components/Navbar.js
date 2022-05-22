@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence, useCycle } from "framer-motion";
+import { motion, AnimatePresence, useCycle, animate } from "framer-motion";
 
 const AnimLink = [
   // Linklar uchun array ichida object
@@ -37,7 +37,27 @@ const animProperties = {
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
-  return <div>Navbar</div>;
+  return (
+    <main>
+      <AnimatePresence>
+        // AnimatePresence-aniamtsiyalar hosil bo'lishi u/n masul tag
+        {open && (
+          <motion.aside
+            initial={{ width: 0 }}
+            animate={{
+              width: 230,
+            }}
+            exit={{
+              width: 0,
+              transition: { delay: 0.7, duration: 0.3 },
+            }}
+          >
+            // motion-orqali animatsiyalar harakatini nazorat qilish mumkin
+          </motion.aside>
+        )}
+      </AnimatePresence>
+    </main>
+  );
 };
 
 export default Navbar;
