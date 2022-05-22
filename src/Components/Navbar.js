@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence, useCycle, animate } from "framer-motion";
+// import BurgerButton from "./BurgerButton";
 
 const AnimLink = [
   // Linklar uchun array ichida object

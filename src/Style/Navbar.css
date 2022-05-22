@@ -29,7 +29,7 @@ aside {
 .toggleButton {
   position: fixed;
   cursor: pointer;
-  margin: 1.25rem;
+  margin: 2rem 0 0 3.5rem;
   border: none;
   padding: 0.5rem 1rem;
   background-color: #f9fafb;
