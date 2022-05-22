@@ -43,6 +43,7 @@ const Navbar = () => {
         // AnimatePresence-aniamtsiyalar hosil bo'lishi u/n masul tag
         {open && (
           <motion.aside
+            // motion-orqali animatsiyalar harakatini nazorat qilish mumkin
             initial={{ width: 0 }}
             animate={{
               width: 230,
@@ -52,7 +53,13 @@ const Navbar = () => {
               transition: { delay: 0.7, duration: 0.3 },
             }}
           >
-            // motion-orqali animatsiyalar harakatini nazorat qilish mumkin
+            <motion.div
+              className="container"
+              initial="closed"
+              variants={animProperties}
+              animate="open"
+              exit="closed"
+            ></motion.div>
           </motion.aside>
         )}
       </AnimatePresence>
