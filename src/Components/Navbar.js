@@ -10,6 +10,15 @@ const AnimLink = [
   { link: "Cotact", to: "#", id: 6 },
 ];
 
+const navbarSituation = {
+  closed: {
+    opacity: 0,
+  },
+  open: {
+    opacity: 1,
+  },
+};
+
 const Navbar = () => {
   return <div>Navbar</div>;
 };
