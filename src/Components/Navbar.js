@@ -73,6 +73,9 @@ const Navbar = () => {
             </motion.div>
           </motion.aside>
         )}
+        <button className="toogleButton" onClick={cycleOpen}>
+          {open ? "Yopish" : "Ochish"}
+        </button>
       </AnimatePresence>
     </main>
   );
