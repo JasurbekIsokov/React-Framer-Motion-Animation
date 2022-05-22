@@ -19,6 +19,21 @@ const navbarSituation = {
   },
 };
 
+const animProperties = {
+  closed: {
+    transition: {
+      staggerChildren: 0.2, // Animatsiya davomiyligi
+      staggerDirection: -1, // Animatsiya joylashuvi
+    },
+  },
+  open: {
+    transition: {
+      staggerChildren: 0.2, // Animatsiya davomiyligi
+      staggerDirection: 1, // Animatsiya joylashuvi
+    },
+  },
+};
+
 const Navbar = () => {
   return <div>Navbar</div>;
 };
