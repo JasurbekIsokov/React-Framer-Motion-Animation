@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 
 import "./Style/Navbar.css";
 import "./Style/index.css";
+import "./Style/Drag.css";
 
 function App() {
   return (
