@@ -1,0 +1,20 @@
+.dragCard .drag-area {
+  opacity: 0.2;
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  border-radius: 30px;
+}
+.dragCard div {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 150px / 2);
+  left: calc(50% - 150px / 2);
+  border-radius: 30px;
+  cursor: pointer;
+}
