@@ -14,3 +14,5 @@ const Drag = () => {
     </div>
   );
 };
+
+export default Drag;
